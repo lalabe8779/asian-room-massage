@@ -1,0 +1,75 @@
+title: 'Image section'
+fields:
+  -
+    handle: image
+    field:
+      mode: grid
+      restrict: false
+      allow_uploads: true
+      display: Image
+      type: assets
+      icon: assets
+      listable: hidden
+      validate:
+        - required
+      container: banners
+  -
+    handle: title
+    field:
+      input_type: text
+      antlers: false
+      display: Title
+      type: text
+      icon: text
+      listable: hidden
+      validate:
+        - required
+  -
+    handle: subtitle
+    field:
+      input_type: text
+      antlers: false
+      display: Subtitle
+      type: text
+      icon: text
+      listable: hidden
+      validate:
+        - required
+  -
+    handle: button_text
+    field:
+      input_type: text
+      antlers: false
+      display: 'Button text'
+      type: text
+      icon: text
+      listable: hidden
+      validate:
+        - required
+  -
+    handle: button_link
+    field:
+      display: 'Button link'
+      type: link
+      icon: link
+      listable: hidden
+      validate:
+        - required
+  -
+    handle: template
+    field:
+      options:
+        left: 'Image on the left'
+        right: 'Image on the right'
+      multiple: false
+      clearable: false
+      searchable: true
+      taggable: false
+      push_tags: false
+      cast_booleans: false
+      display: Template
+      type: select
+      icon: select
+      listable: hidden
+      validate:
+        - required

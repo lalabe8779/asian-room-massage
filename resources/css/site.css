@@ -1,0 +1,45 @@
+/* your custom css */
+.snap {
+    -ms-scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory;
+    -ms-overflow-style: none;
+    scroll-behavior: smooth
+}
+.snap::-webkit-scrollbar {
+    display: none;
+}
+
+.snap > div {
+    scroll-snap-align: center;
+}
+
+body {
+    color: #212529;
+}
+
+.bg-beige {
+    background-color: #f7f4f0;
+}
+
+.wave-section {
+    background-image: url("/images/wave-background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.box-image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.text-shadow {
+    text-shadow: #000 1px 1px;
+}
+
+.text-shadow-none {
+    text-shadow: none;
+}

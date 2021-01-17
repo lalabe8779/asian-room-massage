@@ -1,0 +1,9 @@
+title: Therapeutists
+template: therapeutists/show
+layout: layout
+revisions: false
+route: '/therapeutists/{slug}'
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private

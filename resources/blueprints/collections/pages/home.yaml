@@ -1,0 +1,148 @@
+title: Home
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          input_type: text
+          antlers: false
+          display: Title
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: hero_slider
+        field:
+          display: 'Hero slider'
+          type: section
+          icon: section
+          listable: hidden
+      -
+        import: slider
+        prefix: slider_
+      -
+        handle: first_image_section
+        field:
+          display: 'First image section'
+          type: section
+          icon: section
+          listable: hidden
+      -
+        import: image_section
+        prefix: first_image_section_
+  about_us:
+    display: 'About Us'
+    fields:
+      -
+        handle: mobile_massage_subtitle
+        field:
+          input_type: text
+          antlers: false
+          display: 'Mobile massage subtitle'
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: mobile_massage_title
+        field:
+          type: text
+          input_type: text
+          antlers: false
+          display: 'Mobile massage title'
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: mobile_massage_content
+        field:
+          always_show_set_button: false
+          buttons:
+            - h2
+            - h3
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - quote
+            - anchor
+            - image
+            - table
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          display: 'Mobile massage content'
+          type: bard
+          icon: bard
+          listable: hidden
+  our_services:
+    display: 'Our Services'
+    fields:
+      -
+        handle: our_services_button_text
+        field:
+          input_type: text
+          antlers: false
+          display: 'Our services button text'
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: our_services_content
+        field:
+          always_show_set_button: false
+          buttons:
+            - h2
+            - h3
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - quote
+            - anchor
+            - image
+            - table
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          display: 'Our services content'
+          type: bard
+          icon: bard
+          listable: hidden
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - pages
+          max_items: 1
+          listable: false
+          localizable: true

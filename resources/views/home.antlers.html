@@ -1,0 +1,96 @@
+<div
+    x-data="{size: 2, active: 0}"
+    class="snap overflow-x-auto overflow-y-hidden relative flex-no-wrap flex transition-all max-h-96"
+    x-ref="slider"
+    x-init="setInterval(() => {
+        active = Math.round((active + 1) % size);
+        if (active === 0) {
+            $refs.slider.scrollLeft = 0;
+        } else {
+            $refs.slider.scrollLeft = $refs.slider.scrollLeft + ($refs.slider.scrollWidth / size);
+        }
+
+        console.log('running', active, $refs.slider.scrollLeft)
+    }, 5000);"
+    x-on:scroll.debounce="active = Math.round($event.target.scrollLeft / ($event.target.scrollWidth / size))"
+>
+    {{slider_images}}
+        <div class="relative w-full flex-shrink-0 bg-black text-white flex items-center justify-center">
+            {{image}}
+            {{ responsive:url ratio="16/9" }}
+            {{/image}}
+            <div class="absolute flex flex-col h-full inset-0 justify-center pl-12 w-1/2">
+                <h2 class="text-xl font-bold">{{title}}</h2>
+                <h3 class="hidden md:block text-2xl text-shadow tracking-wider">{{details}}</h3>
+            </div>
+        </div>
+    {{/slider_images}}
+</div>
+
+<div class="wave-section bg-beige py-24">
+    <div class="flex items-center justify-center flex-col space-y-6 max-w-lg mx-auto text-center">
+        <h3 class="text-xl tracking-widest text-gray-500">{{mobile_massage_subtitle}}</h3>
+        <h2 class="text-3xl">{{mobile_massage_title}}</h2>
+        <div>{{mobile_massage_content | classify}}</div>
+        {{ component:button }}More about us{{/component:button}}
+    </div>
+</div>
+
+<div class="mx-auto max-w-5xl py-12">
+    <div class="flex flex-col md:flex-row justify-between items-center p-4 md:p-0">
+        <div class="max-w-md pb-8 text-2xl">
+            {{our_services_content}}
+        </div>
+        <div>
+            <!-- TODO: i cant get the value from our_services_button_text -->
+            {{ component:button }}View our services{{/component:button}}
+        </div>
+    </div>
+
+    {{ collection:services as="service" }}
+        <ul class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
+            {{ service }}
+                <li class="flex flex-col text-center transition-opacity opacity-90 hover:opacity-100">
+                    <a href="{{ url }}">
+                        <div class="box-image py-24" style="background-image: url({{image:url}})">
+                            <h3 class="text-white text-shadow-lg tracking-widest text-xl uppercase font-bold">{{ title }}</h3>
+                        </div>
+                    </a>
+                </li>
+            {{ /service }}
+        </ul>
+    {{ /collection:services }}
+</div>
+
+<div class="w-full relative">
+    {{first_image_section_image}}
+    <div class="w-full box-image" style="background-image: url({{url}}); height: 500px;">
+        <div class="max-w-md h-full flex flex-col items-center justify-center space-y-4 text-center">
+            <h2 class="text-xl">{{first_image_section_title}}</h2>
+            <h3 class="uppercase font-bold text-2xl">{{first_image_section_subtitle}}</h3>
+            {{component:button}}Book now!{{/component:button}}
+        </div>
+    </div>
+    {{/first_image_section_image}}
+
+</div>
+
+<div class="mx-auto max-w-5xl text-center py-12">
+    <h2 class="text-2xl pb-8">Meet our therapists</h2>
+
+    {{ collection:therapeutists as="therapeutist" limit="3" }}
+    <ul class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
+        {{ therapeutist }}
+
+        <li class="flex flex-col text-center transition-opacity opacity-90 hover:opacity-100">
+            <a href="{{ url }}">
+                {{ images limit="1" }}
+                    <div class="box-image py-24" style="background-image: url({{url}})" />
+                {{/images}}
+                <h3 class="text-white text-shadow-lg tracking-widest uppercase font-bold">{{ title }}</h3>
+            </a>
+        </li>
+        {{ /therapeutist }}
+    </ul>
+    {{ /collection:therapeutists }}
+</div>

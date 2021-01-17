@@ -1,0 +1,13 @@
+title: header
+collections:
+  - pages
+root: true
+tree:
+  -
+    entry: home
+  -
+    entry: f15e4d03-6bc7-4d96-b28a-70d7e94b6e63
+  -
+    entry: d7ef2d9f-e7b0-4b87-8123-9178e0a99d2c
+  -
+    entry: f3e8b8f2-d0b4-48eb-921e-a8bcf884555d

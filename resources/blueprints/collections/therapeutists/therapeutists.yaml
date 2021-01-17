@@ -1,0 +1,83 @@
+title: Therapeutists
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: age
+        field:
+          input_type: number
+          antlers: false
+          display: Age
+          type: text
+          icon: text
+          listable: true
+      -
+        handle: nationality
+        field:
+          input_type: text
+          antlers: false
+          display: Nationality
+          type: text
+          icon: text
+          listable: true
+      -
+        handle: hourly_rate
+        field:
+          input_type: text
+          prepend: $
+          append: '/ hr'
+          antlers: false
+          display: 'Hourly rate'
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: massages
+        field:
+          mode: default
+          collections:
+            - services
+          display: Massages
+          type: entries
+          icon: entries
+          listable: hidden
+      -
+        handle: servings
+        field:
+          mode: default
+          taxonomies:
+            - serving
+          display: Servings
+          type: terms
+          icon: taxonomy
+          listable: hidden
+      -
+        handle: images
+        field:
+          mode: grid
+          restrict: false
+          allow_uploads: true
+          display: Images
+          type: assets
+          icon: assets
+          listable: hidden
+          container: therapeutists
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required

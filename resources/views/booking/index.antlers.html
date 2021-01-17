@@ -1,0 +1,26 @@
+<div class="relative max-w-xl mx-auto">
+    {{ form:book_massage }}
+        {{ if !success }}
+            {{ component:booking-form }}
+        {{ /if }}
+
+        <div class="mt-6 flex space-x-2 justify-between">
+            {{ component:button type="submit" }}Submit{{/component:button}}
+
+            <div class="flex items-center justify-center text-white">
+                {{ if errors }}
+                    <div class="bg-red-300 p-2 rounded-sm">
+                        Oops, something went wrong...
+                    </div>
+                {{ /if }}
+
+                {{ if success }}
+                    <div class="bg-green-300 p-2 rounded-sm">
+                        {{ success }}
+                    </div>
+                {{/if}}
+            </div>
+        </div>
+
+    {{ /form:book_massage }}
+</div>

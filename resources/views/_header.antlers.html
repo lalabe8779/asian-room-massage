@@ -1,0 +1,78 @@
+<div x-data="{ open: false }" class="relative sticky top-0 bg-black z-20 text-white">
+    <div class="max-w-7xl mx-auto px-4 py-2 sm:px-6">
+        <nav class="relative flex items-center justify-between sm:h-10 md:justify-between" aria-label="Global">
+            <div class="flex items-center flex-1 md:flex-initial">
+                <div class="flex items-center justify-between w-full md:w-auto">
+                    <a href="/">
+                        <span class="sr-only">Asian Massage for you</span>
+                        Logo
+                    </a>
+                    <div class="-mr-2 flex items-center md:hidden">
+                        <button
+                            @click="open = true"
+                            type="button"
+                            class="rounded-md p-2 inline-flex items-center justify-center border border-black hover:border-gray-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                            id="main-menu"
+                            aria-haspopup="true"
+                        >
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden md:flex md:space-x-10">
+                {{ nav:header }}
+                    <a href="{{url}}" class="opacity-40 hover:text-gray-200">{{ title }}</a>
+                {{ /nav:header }}
+            </div>
+        </nav>
+    </div>
+
+    <div
+        class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+        x-show="open"
+        x-transition:enter="duration-150 ease-out"
+        x-transition:enter-start="opacity-0 scale-95"
+        x-transition:enter-end="opacity-100 scale-100"
+        x-transition:leave="duration-100 ease-in"
+        x-transition:leave-start="opacity-100 scale-100"
+        x-transition:leave-end="opacity-0 scale-95"
+        @click.away="open = false"
+    >
+        <div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
+            <div class="px-5 pt-4 flex items-center justify-between">
+                <a href="/" class="text-black">
+                    <span class="sr-only">Asian Massage for you</span>
+                    Logo
+                </a>
+                <div class="-mr-2">
+                    <button
+                        type="button"
+                        @click="open = false"
+                        class="rounded-md p-2 inline-flex items-center justify-center text-black hover:text-gray-800 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                    >
+                        <span class="sr-only">Close menu</span>
+                        <svg class="h-6 w-6" x-description="Heroicon name: x" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
+                <div class="px-2 pt-2 pb-3" role="none">
+                    {{ nav:header }}
+                        <a
+                            href="{{url}}"
+                            class="block px-3 py-2 rounded-md text-base text-black hover:text-gray-800 hover:bg-gray-50"
+                        >
+                            {{ title }}
+                        </a>
+                    {{ /nav:header }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

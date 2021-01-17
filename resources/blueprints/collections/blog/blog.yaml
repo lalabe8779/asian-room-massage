@@ -1,0 +1,105 @@
+title: Post
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: featured_image
+        field:
+          mode: grid
+          restrict: false
+          allow_uploads: true
+          display: 'Featured Image'
+          type: assets
+          icon: assets
+          listable: hidden
+      -
+        handle: content
+        field:
+          always_show_set_button: false
+          buttons:
+            - h2
+            - h3
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - quote
+            - anchor
+            - image
+            - table
+            - h1
+            - h4
+            - h5
+            - h6
+            - underline
+            - strikethrough
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          display: Content
+          type: bard
+          icon: bard
+          listable: hidden
+      -
+        handle: author
+        field:
+          max_items: 1
+          mode: select
+          display: Author
+          type: users
+          icon: users
+          listable: hidden
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required
+      -
+        handle: date
+        field:
+          type: date
+          required: true
+          validate:
+            - required
+  meta:
+    display: Meta
+    fields:
+      -
+        handle: meta_title
+        field:
+          input_type: text
+          character_limit: 60
+          antlers: false
+          display: 'Meta title'
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: meta_description
+        field:
+          character_limit: '160'
+          antlers: false
+          display: 'Meta description'
+          type: textarea
+          icon: textarea
+          listable: hidden

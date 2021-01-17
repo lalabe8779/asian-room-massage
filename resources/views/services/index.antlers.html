@@ -1,0 +1,10 @@
+{{ collection:services as="service" }}
+    <ul>
+        {{ service }}
+        <li>
+            <a href="{{ url }}"><h3>{{ title }}</h3></a>
+        </li>
+        {{ /service }}
+    </ul>
+{{ /collection:services }}
+
