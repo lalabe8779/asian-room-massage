@@ -8,14 +8,17 @@
         <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{{ mix src='/css/tailwind.css' }}">
     </head>
-    <body>
+    <body class="flex flex-col h-screen">
+        <div class="flex-1">
+            {{ partial:header }}
 
-        {{ partial:header }}
+            <main class="pb-12">
+                {{ template_content }}
+            </main>
+        </div>
 
-        <main>
-            {{ template_content }}
-        </main>
+        {{ partial:footer }}
 
-    <script src="{{ mix src='/js/site.js' }}"></script>
-</body>
+        <script src="{{ mix src='/js/site.js' }}"></script>
+    </body>
 </html>

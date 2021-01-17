@@ -1,3 +1,12 @@
+<div class="max-h-96 overflow-y-hidden relative">
+    <h1 class="absolute inset-0 w-full h-full flex items-center justify-center text-3xl text-white tracking-wide uppercase">
+        {{title}}
+    </h1>
+    {{hero_image}}
+    {{ responsive:url ratio="16/9" }}
+    {{/hero_image}}
+</div>
+
 {{ collection:posts as="post" paginate="10" }}
     {{ if no_results }}
     <h2 class="text-3xl italic tracking-tight">

@@ -11,6 +11,17 @@ sections:
           validate:
             - required
       -
+        handle: hero_image
+        field:
+          mode: grid
+          container: assets
+          restrict: false
+          allow_uploads: true
+          display: 'Hero image'
+          type: assets
+          icon: assets
+          listable: hidden
+      -
         handle: short_description
         field:
           character_limit: '250'

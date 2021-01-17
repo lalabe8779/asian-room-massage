@@ -1,32 +1,17 @@
-<div
-    x-data="{size: 2, active: 0}"
-    class="snap overflow-x-auto overflow-y-hidden relative flex-no-wrap flex transition-all max-h-96"
-    x-ref="slider"
-    x-init="setInterval(() => {
-        active = Math.round((active + 1) % size);
-        if (active === 0) {
-            $refs.slider.scrollLeft = 0;
-        } else {
-            $refs.slider.scrollLeft = $refs.slider.scrollLeft + ($refs.slider.scrollWidth / size);
-        }
-
-        console.log('running', active, $refs.slider.scrollLeft)
-    }, 5000);"
-    x-on:scroll.debounce="active = Math.round($event.target.scrollLeft / ($event.target.scrollWidth / size))"
->
+<!-- Slide -->
+{{ partial:partials/slider }}
     {{slider_images}}
-        <div class="relative w-full flex-shrink-0 bg-black text-white flex items-center justify-center">
-            {{image}}
-            {{ responsive:url ratio="16/9" }}
-            {{/image}}
+        {{partial:partials/slider-item}}
+            {{image}}{{ responsive:url ratio="16/9" }}{{/image}}
             <div class="absolute flex flex-col h-full inset-0 justify-center pl-12 w-1/2">
                 <h2 class="text-xl font-bold">{{title}}</h2>
                 <h3 class="hidden md:block text-2xl text-shadow tracking-wider">{{details}}</h3>
             </div>
-        </div>
+        {{/partial:partials/slider-item}}
     {{/slider_images}}
-</div>
+{{ /partial:partials/slider}}
 
+<!-- About us -->
 <div class="wave-section bg-beige py-24">
     <div class="flex items-center justify-center flex-col space-y-6 max-w-lg mx-auto text-center">
         <h3 class="text-xl tracking-widest text-gray-500">{{mobile_massage_subtitle}}</h3>
@@ -36,6 +21,7 @@
     </div>
 </div>
 
+<!-- Services -->
 <div class="mx-auto max-w-5xl py-12">
     <div class="flex flex-col md:flex-row justify-between items-center p-4 md:p-0">
         <div class="max-w-md pb-8 text-2xl">
@@ -47,21 +33,13 @@
         </div>
     </div>
 
+
     {{ collection:services as="service" }}
-        <ul class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
-            {{ service }}
-                <li class="flex flex-col text-center transition-opacity opacity-90 hover:opacity-100">
-                    <a href="{{ url }}">
-                        <div class="box-image py-24" style="background-image: url({{image:url}})">
-                            <h3 class="text-white text-shadow-lg tracking-widest text-xl uppercase font-bold">{{ title }}</h3>
-                        </div>
-                    </a>
-                </li>
-            {{ /service }}
-        </ul>
+        {{partial:partials/services}}
     {{ /collection:services }}
 </div>
 
+<!-- Image section -->
 <div class="w-full relative">
     {{first_image_section_image}}
     <div class="w-full box-image" style="background-image: url({{url}}); height: 500px;">
@@ -72,25 +50,13 @@
         </div>
     </div>
     {{/first_image_section_image}}
-
 </div>
 
+<!-- Therapists -->
 <div class="mx-auto max-w-5xl text-center py-12">
     <h2 class="text-2xl pb-8">Meet our therapists</h2>
 
-    {{ collection:therapeutists as="therapeutist" limit="3" }}
-    <ul class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
-        {{ therapeutist }}
-
-        <li class="flex flex-col text-center transition-opacity opacity-90 hover:opacity-100">
-            <a href="{{ url }}">
-                {{ images limit="1" }}
-                    <div class="box-image py-24" style="background-image: url({{url}})" />
-                {{/images}}
-                <h3 class="text-white text-shadow-lg tracking-widest uppercase font-bold">{{ title }}</h3>
-            </a>
-        </li>
-        {{ /therapeutist }}
-    </ul>
-    {{ /collection:therapeutists }}
+    {{ collection:therapists as="therapist" limit="3" }}
+        {{partial:partials/therapists}}
+    {{ /collection:therapists }}
 </div>

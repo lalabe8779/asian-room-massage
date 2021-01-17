@@ -1,4 +1,4 @@
-title: Therapeutists
+title: Therapists
 sections:
   main:
     display: Main
@@ -69,7 +69,7 @@ sections:
           type: assets
           icon: assets
           listable: hidden
-          container: therapeutists
+          container: therapists
   sidebar:
     display: Sidebar
     fields:

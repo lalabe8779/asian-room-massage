@@ -1,10 +1,15 @@
-{{ collection:services as="service" }}
-    <ul>
-        {{ service }}
-        <li>
-            <a href="{{ url }}"><h3>{{ title }}</h3></a>
-        </li>
-        {{ /service }}
-    </ul>
-{{ /collection:services }}
+<div class="max-h-96 overflow-y-hidden relative">
+    <h1 class="absolute inset-0 w-full h-full flex items-center justify-center text-3xl text-white tracking-wide uppercase">
+        {{title}}
+    </h1>
+    {{hero_image}}
+    {{ responsive:url ratio="16/9" }}
+    {{/hero_image}}
+</div>
+
+<div class="max-w-5xl mx-auto py-8">
+    {{ collection:services as="service" }}
+        {{partial:partials/services}}
+    {{ /collection:services }}
+</div>
 

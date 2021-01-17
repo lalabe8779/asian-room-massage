@@ -1,0 +1,42 @@
+<div class="relative max-h-96 overflow-y-hidden">
+    {{images limit="1"}}
+        {{ responsive:url ratio="16/9" }}
+    {{/images}}
+
+    <div class="absolute inset-0 w-full h-full flex items-center justify-center">
+        <div class="flex flex-col text-center text-white bg-black py-6 px-12 opacity-75">
+            <h2 class="text-3xl font-bold">{{title}}</h2>
+            <span>{{nationality}}, {{age}} years old</span>
+            <span>${{hourly_rate}} up p/hr</span>
+        </div>
+    </div>
+</div>
+
+<div class="max-w-5xl mx-auto py-12">
+    <ul class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
+        {{images}}
+            <li class="relative flex flex-col">
+                <div class="box-image py-24" style="background-image: url({{url}})"></div>
+            </li>
+        {{/images}}
+    </ul>
+</div>
+
+<div class="wave-section bg-beige p-12 space-y-8">
+    <div class="space-y-3">
+        <h3 class="text-center text-3xl tracking-wide">Massages</h3>
+        <div class="text-center space-x-6">
+            {{massages}}
+            <a href="{{url}}">{{title}}</a>
+            {{/massages}}
+        </div>
+    </div>
+    <div class="space-y-3">
+        <h3 class="text-center text-3xl tracking-wide">Servings</h3>
+        <div class="text-center space-x-6">
+            {{servings}}
+            <span>{{title}}</span>
+            {{/servings}}
+        </div>
+    </div>
+</div>

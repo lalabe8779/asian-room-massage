@@ -1,6 +1,7 @@
 ---
 title: Home
 template: home
+blueprint: home
 author: 4247b919-b951-4164-bb1d-784684bd1808
 updated_by: 4247b919-b951-4164-bb1d-784684bd1808
 updated_at: 1610911460

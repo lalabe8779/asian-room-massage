@@ -7,6 +7,8 @@
     {{/hero_image}}
 </div>
 
-<div class="max-w-3xl mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto">
-    {{ content | classify }}
+<div class="max-w-5xl mx-auto py-8">
+    {{ collection:therapists as="therapist" }}
+        {{partial:partials/therapists}}
+    {{ /collection:therapists }}
 </div>
