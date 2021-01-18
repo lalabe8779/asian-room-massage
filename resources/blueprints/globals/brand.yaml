@@ -6,7 +6,7 @@ sections:
         handle: banners
         field:
           mode: grid
-          container: banners
+          container: assets
           restrict: false
           allow_uploads: true
           max_files: 3

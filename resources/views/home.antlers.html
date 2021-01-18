@@ -2,7 +2,9 @@
 {{ partial:partials/slider }}
     {{slider_images}}
         {{partial:partials/slider-item}}
-            {{image}}{{ responsive:url ratio="16/9" }}{{/image}}
+            {{image}}
+                {{partial:partials/hero}}
+            {{/image}}
             <div class="absolute flex flex-col h-full inset-0 justify-center pl-12 w-1/2">
                 <h2 class="text-xl font-bold">{{title}}</h2>
                 <h3 class="hidden md:block text-2xl text-shadow tracking-wider">{{details}}</h3>
@@ -46,15 +48,15 @@
 <!-- Image section -->
 <div class="w-full relative">
     {{first_image_section_image}}
-    <div class="w-full box-image" style="background-image: url({{url}}); height: 500px;">
-        <div class="max-w-md h-full flex flex-col items-center justify-center space-y-4 text-center">
-            <h2 class="text-xl">{{first_image_section_title}}</h2>
-            <h3 class="uppercase font-bold text-2xl">{{first_image_section_subtitle}}</h3>
-            {{partial:partials/link :url="first_image_section_button_link"}}
-                {{first_image_section_button_text}}
-            {{/partial:partials/link}}
-        </div>
-    </div>
+        {{partial:partials/hero}}
+            <div class="max-w-md h-full flex flex-col items-center justify-center space-y-4 text-center">
+                <h2 class="text-xl">{{first_image_section_title}}</h2>
+                <h3 class="uppercase font-bold text-2xl">{{first_image_section_subtitle}}</h3>
+                {{partial:partials/link :url="first_image_section_button_link"}}
+                    {{first_image_section_button_text}}
+                {{/partial:partials/link}}
+            </div>
+        {{/partial:partials/hero}}
     {{/first_image_section_image}}
 </div>
 

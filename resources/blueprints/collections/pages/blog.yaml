@@ -21,7 +21,7 @@ sections:
           type: assets
           icon: assets
           listable: hidden
-          container: banners
+          container: assets
       -
         handle: template
         field:

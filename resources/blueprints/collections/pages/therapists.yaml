@@ -14,7 +14,7 @@ sections:
         handle: hero_image
         field:
           mode: grid
-          container: banners
+          container: assets
           restrict: false
           allow_uploads: true
           display: 'Hero image'

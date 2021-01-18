@@ -18,7 +18,7 @@ fields:
                 type: assets
                 icon: assets
                 listable: hidden
-                container: banners
+                container: assets
             -
               handle: title
               field:

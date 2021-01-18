@@ -21,7 +21,7 @@ sections:
           type: assets
           icon: assets
           listable: hidden
-          container: services
+          container: assets
       -
         handle: description
         field:
