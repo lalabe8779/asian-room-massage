@@ -86,6 +86,22 @@ sections:
           type: bard
           icon: bard
           listable: hidden
+      -
+        handle: mobile_massage_button_text
+        field:
+          input_type: text
+          antlers: false
+          display: 'Mobile massage button text'
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: mobile_massage_button_link
+        field:
+          display: 'Mobile massage button link'
+          type: link
+          icon: link
+          listable: hidden
   our_services:
     display: 'Our Services'
     fields:
@@ -97,6 +113,13 @@ sections:
           display: 'Our services button text'
           type: text
           icon: text
+          listable: hidden
+      -
+        handle: our_services_button_link
+        field:
+          display: 'Our services button link'
+          type: link
+          icon: link
           listable: hidden
       -
         handle: our_services_content

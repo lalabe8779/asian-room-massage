@@ -3,7 +3,7 @@
         {{title}}
     </h1>
     {{hero_image}}
-    {{ responsive:url ratio="16/9" }}
+        <div class="w-full box-image" style="background-image: url({{url}}); height: 500px;"></div>
     {{/hero_image}}
 </div>
 
@@ -16,7 +16,9 @@
 
     <div class="max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none p-6">
         {{ post }}
-            {{ component:card url="{{url}}" title="{{title}}" text="{{short_description}}" }}
+            {{partial:partials/blog-card  }}
+                {{ responsive:hero_image ratio="16/9" }}
+            {{ /partial:partials/blog-card}}
         {{ /post }}
     </div>
 

@@ -4,7 +4,7 @@ template: home
 blueprint: home
 author: 4247b919-b951-4164-bb1d-784684bd1808
 updated_by: 4247b919-b951-4164-bb1d-784684bd1808
-updated_at: 1610911460
+updated_at: 1610930135
 about_us_subtitle: 'In room massage'
 about_us_title: 'Best mobile massage Las Vegas'
 about_us_content:
@@ -29,7 +29,7 @@ first_image_section_image:
 first_image_section_title: '24 hour massage services'
 first_image_section_subtitle: 'Professional asian massage therapists'
 first_image_section_button_text: 'Book now'
-first_image_section_button_link: 'entry::home'
+first_image_section_button_link: 'entry::77b5f69b-3fee-4d0e-adab-66e7cc5f8911'
 first_image_section_template: right
 second_image_section_image:
   - banner-2.jpg
@@ -59,7 +59,7 @@ slider_images:
             type: text
             text: 'We provide the highest quality of Swedish massage therapy with 24 hour on-demand massage in Las Vegs.'
     button_title: 'Learn more'
-    button_link: /
+    button_link: 'entry::d7ef2d9f-e7b0-4b87-8123-9178e0a99d2c'
     type: new_set
     enabled: true
   -
@@ -74,9 +74,12 @@ slider_images:
             type: text
             text: 'We provide the highest quality of Swedish massage therapy with 24 hour on-demand massage in Las Vegs.'
     button_title: 'Book an appointment'
-    button_link: /
+    button_link: 'entry::77b5f69b-3fee-4d0e-adab-66e7cc5f8911'
     type: new_set
     enabled: true
+mobile_massage_button_text: 'Book now!'
+mobile_massage_button_link: 'entry::77b5f69b-3fee-4d0e-adab-66e7cc5f8911'
+our_services_button_link: 'entry::d7ef2d9f-e7b0-4b87-8123-9178e0a99d2c'
 id: home
 content:
   -
