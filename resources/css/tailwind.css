@@ -1,6 +1,6 @@
 @tailwind base;
 
-@import "site";
+@import "./site.css";
 
 @tailwind components;
 @tailwind utilities;

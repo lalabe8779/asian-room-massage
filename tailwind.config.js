@@ -1,11 +1,11 @@
 module.exports = {
-  purge: [{
+  purge: {
       content: [
           './resources/**/*.antlers.html',
           './resources/**/*.blade.php',
           './content/**/*.md'
       ]
-  }],
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
         extend: {
