@@ -53,21 +53,31 @@ sections:
           input_type: text
           antlers: false
           display: Date
-          type: text
+          type: date
           icon: text
           listable: hidden
           validate:
             - required
-            - date
+            - 'after_or_equal:today'
+          mode: single
+          time_enabled: false
+          time_required: false
+          earliest_date: '1900-01-01'
+          full_width: false
+          inline: false
+          columns: 1
+          rows: 1
       -
         handle: time
         field:
           input_type: time
           antlers: false
           display: Time
-          type: text
+          type: time
           icon: text
           listable: hidden
+          validate:
+            - required
       -
         handle: hotel
         field:
@@ -96,3 +106,6 @@ sections:
           icon: textarea
           instructions: 'Special requests or questions'
           listable: hidden
+          validate:
+            - string
+            - 'max:500'

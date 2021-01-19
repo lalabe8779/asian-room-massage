@@ -1,7 +1,8 @@
 @props([
-'type' => 'text',
-'rows' => '3',
-'hasError' => false
+    'value' => '',
+    'type' => 'text',
+    'rows' => '3',
+    'hasError' => false
 ])
 
 <div class="mt-1 relative">
@@ -12,5 +13,5 @@
         ]) }}
         type="{{ $type }}"
         rows="{{ $rows }}"
-    ></textarea>
+    >{{ $value }}</textarea>
 </div>

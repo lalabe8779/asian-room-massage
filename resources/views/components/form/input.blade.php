@@ -1,9 +1,10 @@
 @props([
-'type' => 'text',
-'hasError' => false,
-'leadingIcon' => false,
-'trailingIcon' => false,
-'placeholder' => false
+    'value' => '',
+    'type' => 'text',
+    'hasError' => false,
+    'leadingIcon' => false,
+    'trailingIcon' => false,
+    'placeholder' => false
 ])
 
 <div class="mt-1 relative rounded-sm">
@@ -22,6 +23,7 @@
         ]) }}
         placeholder="{{ $placeholder }}"
         type="{{ $type }}"
+        value="{{ $value }}"
     />
 
     @if($trailingIcon)

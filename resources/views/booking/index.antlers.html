@@ -5,28 +5,45 @@
 </div>
 
 <div class="relative max-w-xl mx-auto py-12">
+
     {{ form:book_massage }}
         {{ if !success }}
-            {{ component:booking-form }}
+            <div class="grid grid-cols-6 gap-6">
+                {{ fields }}
+                    <div class="{{type === "textarea" ? 'col-span-6' : 'col-span-6 sm:col-span-3'}}">
+
+                        {{ component:form.group}}
+                            <div class="flex justify-between">{{display}}</div>
+                            {{ if type === "text" }}
+                                {{ component:form.input id="{{handle}}" name="{{handle}}" value="{{ old ?? '' }}" }}
+                            {{ elseif type === "textarea" }}
+                                {{ component:form.textarea id="{{handle}}" name="{{handle}}" value="{{ old ?? '' }}" }}
+                            {{ elseif type === "date" }}
+                                {{ component:form.date id="{{handle}}" name="{{handle}}" value="{{ old ?? '' }}" }}
+                            {{ elseif type === "time" }}
+                                {{ component:form.time id="{{handle}}" name="{{handle}}" value="{{ old ?? '' }}" }}
+                            {{ /if}}
+
+                            <p class="mt-2 text-sm text-red-600">{{ error }}</p>
+                        {{ component:form.group }}
+                    </div>
+                {{ /fields }}
+            </div>
+            <div class="mt-6 flex space-x-2 justify-between">
+                {{ component:button type="submit" }}Submit{{/component:button}}
+            </div>
         {{ /if }}
 
-        <div class="mt-6 flex space-x-2 justify-between">
-            {{ component:button type="submit" }}Submit{{/component:button}}
+        {{ if success }}
+            <div class="flex flex-col text-center items-center justify-center text-white">
+                <h2 class="text-xl text-black font-bold">Thank you for contacting us.</h2>
 
-            <div class="flex items-center justify-center text-white">
-                {{ if errors }}
-                    <div class="bg-red-300 p-2 rounded-sm">
-                        Oops, something went wrong...
-                    </div>
-                {{ /if }}
-
-                {{ if success }}
-                    <div class="bg-green-300 p-2 rounded-sm">
-                        {{ success }}
-                    </div>
-                {{/if}}
+                <div class="pt-4">
+                    <p class="text-black">We will be in touch with you shortly.</p>
+                    <p class="text-black">If you need immediate assistance call us at 888-999-1234.</p>
+                </div>
             </div>
-        </div>
-
+        {{/if}}
     {{ /form:book_massage }}
+
 </div>
