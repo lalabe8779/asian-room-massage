@@ -58,5 +58,6 @@ sections:
           instructions: 'Special requests or questions'
           listable: hidden
           validate:
+            - required
             - string
             - 'max:500'
