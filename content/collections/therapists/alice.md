@@ -12,11 +12,14 @@ servings:
   - mobile
   - out-call
 updated_by: 4247b919-b951-4164-bb1d-784684bd1808
-updated_at: 1610909014
+updated_at: 1611183938
 featured: true
 images:
   - therapist-1.jpg
   - therapist-3.jpg
   - therapist-2.jpg
+  - therapist-4.jpg
+  - therapist-5.jpg
+  - therapist-6.jpg
 id: 10b518c0-05d8-4727-8b77-2f3100eeb186
 ---

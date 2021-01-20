@@ -1,0 +1,62 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: first_name
+        field:
+          input_type: text
+          antlers: false
+          display: 'First name'
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: last_name
+        field:
+          input_type: text
+          antlers: false
+          display: 'Last name'
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: email
+        field:
+          input_type: text
+          antlers: false
+          display: Email
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+            - email
+      -
+        handle: phone_number
+        field:
+          input_type: tel
+          antlers: false
+          display: 'Phone number'
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: message
+        field:
+          character_limit: '500'
+          antlers: false
+          display: Message
+          type: textarea
+          icon: textarea
+          instructions: 'Special requests or questions'
+          listable: hidden
+          validate:
+            - string
+            - 'max:500'

@@ -1,5 +1,6 @@
 <!-- Slide -->
-{{ partial:partials/slider }}
+<!-- TODO: i just wanted to pass the |count, but couldnt figure out how -->
+{{ partial:partials/slider :images="slider_images" }}
     {{slider_images}}
         {{partial:partials/slider-item}}
             {{image}}

@@ -3,7 +3,10 @@
     <li class="relative flex flex-col text-center transition-opacity opacity-90 hover:opacity-100 shadow py-4">
         <a href="{{ url }}">
             {{ images limit="1" }}
-            <div class="box-image py-24" style="background-image: url({{glide:url width="330" height="220" }})"></div>
+                <div
+                    class="box-image py-24"
+                    style="background-image: url({{glide:url width="330" height="220" }})"
+                ></div>
             {{/images}}
             <h3 class="tracking-widest uppercase font-bold">{{ title }}</h3>
         </a>
