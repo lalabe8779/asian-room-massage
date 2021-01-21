@@ -1,13 +1,22 @@
-<div class="wave-section bg-beige h-64 overflow-y-hidden relative">
-    <h1 class="absolute inset-0 w-full h-full flex items-center justify-center text-3xl tracking-wide uppercase">
-        {{title}}
-    </h1>
-</div>
+<div class="relative max-w-5xl mx-auto py-12 grid grid-cols-2 gap-x-12">
+    {{ collection:services as="service" limit="4" }}
+    <ul class="gap-x-6 grid grid-cols-2 items-center justify-center py-8">
+        {{ service scope="service" }}
+            <li class="relative flex flex-col text-center">
+                {{ responsive:image ratio="1" }}
 
-<div class="relative max-w-xl mx-auto py-12">
+            </li>
+        {{ /service }}
+    </ul>
+    {{ /collection:services }}
+
 
     {{ form:book_massage }}
         {{ if !success }}
+            <div class="text-center pb-16 space-y-6">
+                <h4 class="text-gray-700 uppercase">Welcome</h4>
+                <h1 class="text-3xl">Make your reservation now!</h1>
+            </div>
             <div class="grid grid-cols-6 gap-6">
                 {{ fields }}
                     <div class="{{type === "textarea" ? 'col-span-6' : 'col-span-6 sm:col-span-3'}}">
@@ -30,7 +39,7 @@
                 {{ /fields }}
             </div>
             <div class="mt-6 flex space-x-2 justify-between">
-                {{ component:button type="submit" }}Submit{{/component:button}}
+                {{ component:button type="submit" }}Book{{/component:button}}
             </div>
         {{ /if }}
 

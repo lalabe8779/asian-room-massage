@@ -1,15 +1,20 @@
 <ul class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
-    {{ therapist }}
-    <li class="relative flex flex-col text-center transition-opacity opacity-90 hover:opacity-100 shadow py-4">
-        <a href="{{ url }}">
-            {{ images limit="1" }}
-                <div
-                    class="box-image py-24"
-                    style="background-image: url({{glide:url width="330" height="220" }})"
-                ></div>
-            {{/images}}
-            <h3 class="tracking-widest uppercase font-bold">{{ title }}</h3>
-        </a>
-    </li>
+    {{ therapist scope="therapist" }}
+        <li class="relative flex flex-col text-center transition-opacity opacity-90 hover:opacity-100">
+            <a href="{{ url }}">
+                {{ images limit="1" }}
+                    <div class="box-image py-32" style="background-image: url({{glide:url width="400" height="300" }})">
+                        <div class="absolute inset-0 w-full h-full bg-black opacity-40"></div>
+                        <div class="absolute inset-0 w-full h-full flex items-center justify-center">
+                            <h3
+                                class="z-5 text-white text-shadow-lg tracking-widest uppercase"
+                            >
+                                {{ therapist:title }}
+                            </h3>
+                        </div>
+                    </div>
+                {{/images}}
+            </a>
+        </li>
     {{ /therapist }}
 </ul>

@@ -1,49 +1,73 @@
-<div class="wave-section bg-beige h-64 overflow-y-hidden relative">
-    <h1 class="absolute inset-0 w-full h-full flex items-center justify-center text-3xl tracking-wide uppercase">
-        {{title}}
-    </h1>
-</div>
+<div class="relative max-w-7xl mx-auto py-12">
+    <div class="text-center pb-16 space-y-6">
+        <h4 class="text-gray-700 uppercase">24 hours | Monday to Sunday</h4>
+        <h1 class="text-3xl">Hello, how can we help?</h1>
+    </div>
 
-<div class="relative max-w-xl mx-auto py-12">
-
-    {{ form:contact }}
-        {{ if !success }}
-            <div class="grid grid-cols-6 gap-6">
-                {{ fields }}
-                    <div class="{{type === "textarea" ? 'col-span-6' : 'col-span-6 sm:col-span-3'}}">
-
-                        {{ component:form.group}}
-                            <div class="flex justify-between">{{display}}</div>
-                            {{ if type === "text" }}
-                                {{ component:form.input id="{{handle}}" name="{{handle}}" value="{{ old ?? '' }}" }}
-                            {{ elseif type === "textarea" }}
-                                {{ component:form.textarea id="{{handle}}" name="{{handle}}" value="{{ old ?? '' }}" }}
-                            {{ elseif type === "date" }}
-                                {{ component:form.date id="{{handle}}" name="{{handle}}" value="{{ old ?? '' }}" }}
-                            {{ elseif type === "time" }}
-                                {{ component:form.time id="{{handle}}" name="{{handle}}" value="{{ old ?? '' }}" }}
-                            {{ /if}}
-
-                            <p class="mt-2 text-sm text-red-600">{{ error }}</p>
-                        {{ component:form.group }}
+    <div class="grid grid-cols-3 gap-x-12 gap-y-12 px-8">
+        <div class="col-span-3 md:col-span-1 text-gray-700 min-w-64">
+            <h3 class="uppercase text-xs">Our contacts</h3>
+            <div class="h-1 w-12 border-b border-gray-500 py-2"></div>
+            <ul class="pt-6 space-y-2">
+                <li class="flex items-center space-x-2">
+                    <div class="h-4 w-4">
+                        <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
                     </div>
-                {{ /fields }}
-            </div>
-            <div class="mt-6 flex space-x-2 justify-between">
-                {{ component:button type="submit" }}Submit{{/component:button}}
-            </div>
-        {{ /if }}
+                    <span>{{brand:phone_number}}</span>
+                </li>
+                <li class="flex items-center space-x-2">
+                    <div class="h-4 w-4">
+                        <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M14.243 5.757a6 6 0 10-.986 9.284 1 1 0 111.087 1.678A8 8 0 1118 10a3 3 0 01-4.8 2.401A4 4 0 1114 10a1 1 0 102 0c0-1.537-.586-3.07-1.757-4.243zM12 10a2 2 0 10-4 0 2 2 0 004 0z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <span>{{brand:email}}</span>
+                </li>
+            </ul>
+        </div>
 
-        {{ if success }}
-            <div class="flex flex-col text-center items-center justify-center text-white">
-                <h2 class="text-xl text-black font-bold">Thank you for contacting us.</h2>
+        <div class="col-span-3 md:col-span-2 ">
+            {{ form:contact }}
+                {{ if !success }}
+                    <div class="grid grid-cols-6 gap-6">
+                        {{ fields }}
+                            <div class="{{type === "textarea" ? 'col-span-6' : 'col-span-6 sm:col-span-3'}}">
 
-                <div class="pt-4">
-                    <p class="text-black">We will be in touch with you shortly.</p>
-                    <p class="text-black">If you need immediate assistance call us at 888-999-1234.</p>
-                </div>
-            </div>
-        {{/if}}
-    {{ /form:contact }}
+                                {{ component:form.group}}
+                                    <div class="flex justify-between">{{display}}</div>
+                                    {{ if type === "text" }}
+                                        {{ component:form.input id="{{handle}}" name="{{handle}}" value="{{ old ?? '' }}" }}
+                                    {{ elseif type === "textarea" }}
+                                        {{ component:form.textarea id="{{handle}}" name="{{handle}}" value="{{ old ?? '' }}" }}
+                                    {{ elseif type === "date" }}
+                                        {{ component:form.date id="{{handle}}" name="{{handle}}" value="{{ old ?? '' }}" }}
+                                    {{ elseif type === "time" }}
+                                        {{ component:form.time id="{{handle}}" name="{{handle}}" value="{{ old ?? '' }}" }}
+                                    {{ /if}}
 
+                                    <p class="mt-2 text-sm text-red-600">{{ error }}</p>
+                                {{ component:form.group }}
+                            </div>
+                        {{ /fields }}
+                    </div>
+                    <div class="mt-6 flex space-x-2 justify-between">
+                        {{ component:button type="submit" }}Send message{{/component:button}}
+                    </div>
+                {{ /if }}
+
+                {{ if success }}
+                    <div class="flex flex-col text-center items-center justify-center text-white">
+                        <h2 class="text-xl text-black font-bold">Thank you for contacting us.</h2>
+
+                        <div class="pt-4">
+                            <p class="text-black">We will be in touch with you shortly.</p>
+                            <p class="text-black">If you need immediate assistance call us at 888-999-1234.</p>
+                        </div>
+                    </div>
+                {{/if}}
+            {{ /form:contact }}
+        </div>
+    </div>
 </div>
