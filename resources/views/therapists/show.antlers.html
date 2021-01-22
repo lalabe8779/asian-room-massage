@@ -1,52 +1,61 @@
-<div class="relative max-h-96 overflow-y-hidden">
-    {{images limit="1"}}
-        {{partial:partials/hero}}
-    {{/images}}
-
-    <div class="absolute inset-0 w-full h-full flex items-center justify-center">
-        <div class="flex flex-col text-center text-white bg-black py-6 px-12 opacity-75">
-            <h2 class="text-3xl font-bold">{{title}}</h2>
-            <span>{{nationality}}, {{age}} years old</span>
-            <span>${{hourly_rate}} up p/hr</span>
-        </div>
+<div>
+    <div class="flex flex-col items-center py-12">
+        <h2 class="title-with-lines text-3xl font-bold px-4">{{title}}</h2>
+        <span>{{nationality}}, {{age}} years old</span>
+        <span>${{hourly_rate}} up p/hr</span>
     </div>
-</div>
 
-<div class="max-w-7xl mx-auto py-12">
-    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
-        {{images}}
-            <div
-                class="box-image w-full"
-                style="
-                    background-image:url('{{ glide:url width="500" height="400" fit="crop_focal" }}');
-                    background-position: {{ focus_css }};
-                    height: 400px
-                "
-            >
+    <div class="max-w-7xl mx-auto flex items-center justify-center flex-col md:flex-row">
+        <div class="h-full flex-1 w-full md:w-auto">
+            {{images limit="1"}}
+                <div class="box-image py-64" style="background-image: url({{glide:url width="300" height="300" }})"></div>
+            {{/images}}
+        </div>
+        <div class="wave-section bg-beige p-12 space-y-8 flex-1 h-full flex flex-col">
+            <div class="space-y-3">
+                <h3 class="text-center text-3xl tracking-wide">Massages</h3>
+                <div class="text-center space-x-6">
+                    {{massages}}
+                    <a href="{{url}}">{{title}}</a>
+                    {{/massages}}
+                </div>
             </div>
-        {{/images}}
+            <div class="space-y-3">
+                <h3 class="text-center text-3xl tracking-wide">Servings</h3>
+                <div class="text-center space-x-6">
+                    {{servings}}
+                    <span>{{title}}</span>
+                    {{/servings}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="grid grid-cols-1 grid-rows-1 py-12" x-data="carousel()" x-init="init()">
+        <div class="carousel col-start-1 row-start-1" x-ref="carousel">
+            {{images}}
+            <div class="carousel-cell w-full md:w-2/5 px-2">{{responsive:url glide:height="400" }}</div>
+            {{/images}}
+        </div>
+    </div>
+
+    <div class="flex items-center justify-center pb-8">
+        {{ partial:partials/link url="/booking"}}Book now{{/partial:partials/link}}
     </div>
 </div>
 
-<div class="wave-section bg-beige p-12 space-y-8">
-    <div class="space-y-3">
-        <h3 class="text-center text-3xl tracking-wide">Massages</h3>
-        <div class="text-center space-x-6">
-            {{massages}}
-            <a href="{{url}}">{{title}}</a>
-            {{/massages}}
-        </div>
-    </div>
-    <div class="space-y-3">
-        <h3 class="text-center text-3xl tracking-wide">Servings</h3>
-        <div class="text-center space-x-6">
-            {{servings}}
-            <span>{{title}}</span>
-            {{/servings}}
-        </div>
-    </div>
-</div>
-
-<div class="flex items-center justify-center pb-8">
-    {{ partial:partials/link url="/booking"}}Book now{{/partial:partials/link}}
-</div>
+<script>
+    function carousel() {
+  return {
+    active: 0,
+    init() {
+      var flkty = new Flickity(this.$refs.carousel, {
+        wrapAround: true,
+        pageDots: false
+      });
+      flkty.on('change', i => this.active = i);
+    }
+  }
+}
+</script>
