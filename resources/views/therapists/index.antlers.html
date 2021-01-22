@@ -25,7 +25,10 @@
 
 
     {{ collection:therapists as="therapist" }}
-    <div class="py-12" data-flickity='{ "pageDots": false, "wrapAround": true, "lazyLoad": 2 }'>
+    <div
+        class="py-12"
+        data-flickity='{ "pageDots": false, "wrapAround": true, "lazyLoad": 2, "autoPlay": true }'
+    >
         {{therapist scope="therapist"}}
             {{ images limit="2" }}
                  <div class="w-full md:w-2/5 px-2">{{responsive:url glide:height="400" }}</div>
