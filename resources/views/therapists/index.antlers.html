@@ -23,34 +23,14 @@
         {{ partial:partials/link url="/booking"}}Book now{{/partial:partials/link}}
     </div>
 
+
     {{ collection:therapists as="therapist" }}
-        <ul
-            x-data="{size: {{ therapist|count }} * 2,  active: 0, direction: 1}"
-            class="snap overflow-x-auto overflow-y-hidden relative flex-no-wrap flex transition-all"
-            x-ref="slider"
-            x-init="setInterval(() => {
-                active = Math.round(((active + 1) * direction) % size);
-
-                if (active === 0) {
-                    direction *= -1;
-                }
-
-                $refs.slider.scrollLeft = $refs.slider.scrollLeft + (($refs.slider.scrollWidth / size) * direction);
-            }, 2000);"
-            x-on:scroll.debounce="active = Math.round($event.target.scrollLeft / ($event.target.scrollWidth / size))"
-        >
-            {{therapist scope="therapist"}}
-                {{ images limit="2" }}
-                    <li class="h-full flex-shrink-0">
-                        <a href="{{ therapist:url }}">
-                            <div
-                                class="box-image py-64 opacity-75 hover:opacity-100"
-                                style="background-image: url({{glide:url width="500" height="500" }}); width: 500px"
-                            ></div>
-                        </a>
-                    </li>
-                {{/images}}
-            {{/therapist}}
-        </ul>
+    <div class="py-12" data-flickity='{ "pageDots": false, "wrapAround": true, "lazyLoad": 2 }'>
+        {{therapist scope="therapist"}}
+            {{ images limit="2" }}
+                 <div class="w-full md:w-2/5 px-2">{{responsive:url glide:height="400" }}</div>
+            {{/images}}
+        {{/therapist}}
+    </div>
     {{ /collection:therapists }}
 </div>

@@ -31,31 +31,13 @@
         </div>
     </div>
 
-
-    <div class="grid grid-cols-1 grid-rows-1 py-12" x-data="carousel()" x-init="init()">
-        <div class="carousel col-start-1 row-start-1" x-ref="carousel">
-            {{images}}
-            <div class="carousel-cell w-full md:w-2/5 px-2">{{responsive:url glide:height="400" }}</div>
-            {{/images}}
-        </div>
+    <div class="py-12" data-flickity='{ "pageDots": false, "wrapAround": true, "lazyLoad": 2 }'>
+        {{images}}
+        <div class="w-full md:w-2/5 px-2">{{responsive:url glide:height="400" }}</div>
+        {{/images}}
     </div>
 
     <div class="flex items-center justify-center pb-8">
         {{ partial:partials/link url="/booking"}}Book now{{/partial:partials/link}}
     </div>
 </div>
-
-<script>
-    function carousel() {
-  return {
-    active: 0,
-    init() {
-      var flkty = new Flickity(this.$refs.carousel, {
-        wrapAround: true,
-        pageDots: false
-      });
-      flkty.on('change', i => this.active = i);
-    }
-  }
-}
-</script>
