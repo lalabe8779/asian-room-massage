@@ -29,6 +29,14 @@ body {
     background-size: cover;
 }
 
+.dark-wave-section {
+    background-image: url("/images/dark-wave-background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
 .box-image {
     background-position: center center;
     background-repeat: no-repeat;

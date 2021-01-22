@@ -19,6 +19,9 @@
         {{ /collection:therapists }}
     </div>
 
+    <div class="flex items-center justify-center pb-8">
+        {{ partial:partials/link url="/booking"}}Book now{{/partial:partials/link}}
+    </div>
 
     {{ collection:therapists as="therapist" }}
         <ul

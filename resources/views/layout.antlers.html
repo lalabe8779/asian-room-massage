@@ -8,7 +8,6 @@
         <link rel="dns-prefetch" href="//fonts.googleapis.com">
         <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{{ mix src='/css/tailwind.css' }}">
-        <link rel="manifest" href="/manifest.webmanifest">
         <meta name="theme-color" content="#1a1a1a">
     </head>
     <body class="flex flex-col h-screen text-black antialiased bg-beige">
@@ -23,14 +22,5 @@
         {{ partial:footer }}
 
         <script src="{{ mix src='/js/site.js' }}"></script>
-        <script>
-            // Check that service workers are supported
-            if ('serviceWorker' in navigator) {
-                // Use the window load event to keep the page load performant
-                window.addEventListener('load', () => {
-                    navigator.serviceWorker.register('/service-worker.js');
-                });
-            }
-        </script>
     </body>
 </html>

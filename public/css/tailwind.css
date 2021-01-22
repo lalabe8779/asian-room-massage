@@ -4,7 +4,7 @@
   -ms-scroll-snap-type: x mandatory;
   scroll-snap-type: x mandatory;
   -ms-overflow-style: none;
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
 }
 
 .snap::-webkit-scrollbar {
@@ -25,6 +25,14 @@ body {
 
 .wave-section {
   background-image: url("/images/wave-background.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.dark-wave-section {
+  background-image: url("/images/dark-wave-background.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: scroll;
