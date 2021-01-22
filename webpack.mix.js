@@ -17,7 +17,7 @@ mix
     .js("resources/js/site.js", "public/js")
     .postCss("resources/css/tailwind.css", "public/css")
     .tailwind("./tailwind.config.js")
-    .sourceMaps():
+    .sourceMaps();
 
 if (mix.inProduction()) {
    mix.version();
