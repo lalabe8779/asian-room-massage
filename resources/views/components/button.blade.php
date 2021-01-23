@@ -14,7 +14,7 @@
             $colors = 'text-gray-500 bg-gray-200 hover:bg-gray-300 focus:ring-gray-300 active:bg-gray-300';
             break;
         default:
-            $colors = 'bg-black hover:bg-gray-800 active:bg-gray-800 focus:ring-indigo-200';
+            $colors = 'bg-black hover:bg-gray-800 active:bg-gray-800 focus:ring-black';
             break;
     }
 @endphp

@@ -1,5 +1,5 @@
 <div
-        class="mt-1 relative rounded-md shadow-sm"
+        class="mt-1 relative rounded-md"
         x-data
         x-init="new Cleave('#{{ $id }}', { date: true, delimiter: '-', datePattern: ['Y', 'm', 'd'] })"
 >
