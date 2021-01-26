@@ -18,7 +18,9 @@
             <h2 class="text-black uppercase tracking-widest border-b pb-4">Details</h2>
             <ul class="space-y-6">
                 <li class="flex justify-between">
-                    <span class="text-xs text-black uppercase tracking-wider pr-8">Massage:</span>
+                    <div>
+                        <span class="text-xs text-black uppercase tracking-wider pr-8">Massage:</span>
+                    </div>
                     <div class="flex flex-col text-right">
                         {{massages}}
                             <a class="underline text-gray-600 hover:text-black" href="{{url}}">{{title}}</a>
@@ -26,7 +28,9 @@
                     </div>
                 </li>
                 <li class="flex justify-between">
-                    <span class="text-xs text-black uppercase tracking-wider pr-8">Serving:</span>
+                    <div>
+                        <span class="text-xs text-black uppercase tracking-wider pr-8">Serving:</span>
+                    </div>
                     <div class="flex flex-col text-right text-gray-600">
                         {{servings}}
                         <span>{{title}}</span>
