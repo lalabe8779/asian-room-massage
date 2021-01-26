@@ -11,7 +11,7 @@
             data-flickity='{ "pageDots": false, "prevNextButtons": false }'
         >
             {{images}}
-            <div class="w-full px-2">{{responsive:url glide:height="400" ratio="16/9" }}</div>
+            <div class="w-full px-2">{{responsive:url ratio="16/9" }}</div>
             {{/images}}
         </div>
         <div class="px-12 space-y-8 h-full flex flex-col">
@@ -46,7 +46,7 @@
         data-flickity='{ "pageDots": false, "contain": true, "lazyLoad": 2, "autoPlay": true, "asNavFor": ".carousel-main" }'
     >
         {{images}}
-        <div class="w-full md:w-2/5 px-2">{{responsive:url glide:height="400" }}</div>
+        <div class="w-full md:w-2/5 px-2">{{responsive:url ratio="16/9" }}</div>
         {{/images}}
     </div>
 
