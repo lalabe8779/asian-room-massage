@@ -49,8 +49,8 @@ description:
       -
         type: text
         text: '5. It offers sensual exploration to satisfy the body and mind. Whether you’re a man or woman, nuru massage is open to everyone. No matter what your sexual preferences are. Nuru massage allows you to relish in the sensual energy created during the activity. The strokes on the skin will allow you to engage in a safe and thrilling experience, which will bring you a mind-blowing ending.'
-updated_by: 4247b919-b951-4164-bb1d-784684bd1808
-updated_at: 1610903612
-image: massage-nuru-las-vegas.jpg
+updated_by: 995e234d-6a50-4c6d-8caf-1e615c196b62
+updated_at: 1611860535
+image: depositphotos_347382524-stock-photo-cropped-view-woman-white-underwear.jpg
 id: 1f70754a-c86b-4c19-945c-baaee7c156f4
 ---

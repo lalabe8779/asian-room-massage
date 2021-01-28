@@ -150,8 +150,8 @@ description:
               -
                 type: text
                 text: 'This type of massage is also good for people new to massage.'
-updated_by: 4247b919-b951-4164-bb1d-784684bd1808
-updated_at: 1610903636
-image: massage-deep-tissue.jpg
+updated_by: 995e234d-6a50-4c6d-8caf-1e615c196b62
+updated_at: 1611861072
+image: massage-couples.jpg
 id: c831e37f-6399-4a90-ae82-a442fd921288
 ---

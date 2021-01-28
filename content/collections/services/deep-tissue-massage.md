@@ -54,8 +54,8 @@ description:
               -
                 type: text
                 text: 'Avoid this type of massage if you’re overly sensitive to pressure.'
-updated_by: 4247b919-b951-4164-bb1d-784684bd1808
-updated_at: 1610903584
-image: massage-deep-tissue.jpg
+updated_by: 995e234d-6a50-4c6d-8caf-1e615c196b62
+updated_at: 1611859938
+image: deep-tissue.jpg
 id: 29ac9785-8a22-407d-8d0a-cfdb9034df81
 ---

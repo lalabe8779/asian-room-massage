@@ -60,8 +60,8 @@ description:
       -
         type: text
         text: 'AsianMassage2U.com offers 24 hours massage hotel in room Asian massage services, book us today to experience the best massage services in Las Vegas.'
-updated_by: 4247b919-b951-4164-bb1d-784684bd1808
-updated_at: 1610903575
-image: massage-couples.jpg
+updated_by: 995e234d-6a50-4c6d-8caf-1e615c196b62
+updated_at: 1611861158
+image: couples-massage.jpg
 id: 9150e927-4545-4858-b2fb-f6de84dad3c5
 ---

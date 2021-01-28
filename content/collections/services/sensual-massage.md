@@ -47,8 +47,8 @@ description:
       -
         type: text
         text: 'You deserve a massage from an incredible masseuse. If you’re looking for something new and sensual to experience, you should try a sensual massage. There’s no better place for massages than Las Vegas. This city is the massage capital of the world. No matter what type of massage you can prefer, you can find it in Las Vegas. The best part is that your  masseuse will do anything to put a smile on your face. So, why don’t you get a massage in las Vegas? A sexy sensual massage Las Vegas will leave you feeling great. Call a Las Vegas massage expert today.'
-updated_by: 4247b919-b951-4164-bb1d-784684bd1808
-updated_at: 1610903626
-image: massage-couples.jpg
+updated_by: 995e234d-6a50-4c6d-8caf-1e615c196b62
+updated_at: 1611861517
+image: ling-1-banner.jpg
 id: d93e3994-a2f8-4c82-992f-f1fb6dee8466
 ---

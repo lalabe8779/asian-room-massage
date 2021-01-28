@@ -184,8 +184,8 @@ description:
           -
             type: italic
         text: 'Tip: Remember take your time and move slowly and deliberately. There is a world of difference between a tickle and a massage'
-updated_by: 4247b919-b951-4164-bb1d-784684bd1808
-updated_at: 1610903593
-image: massage-erotic.jpg
+updated_by: 995e234d-6a50-4c6d-8caf-1e615c196b62
+updated_at: 1611860897
+image: erotic-massage.jpg
 id: 93c0a893-0cf3-4cb1-be36-b1c564cc6158
 ---
