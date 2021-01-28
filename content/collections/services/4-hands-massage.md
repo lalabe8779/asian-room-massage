@@ -43,8 +43,8 @@ description:
       -
         type: text
         text: 'The benefits are the same as massage with one person. The level of muscle relaxation increased because of the use 4 hand with more intense movements. Using the four-hand massage is having all benefits like “double” massage.'
-updated_by: 4247b919-b951-4164-bb1d-784684bd1808
-updated_at: 1610903566
-image: massage-4-hands.jpg
+updated_by: 995e234d-6a50-4c6d-8caf-1e615c196b62
+updated_at: 1611861901
+image: 4-hands.jpg
 id: 89daaedd-72af-4612-b435-e8d1c8409302
 ---
