@@ -1,14 +1,20 @@
 <!-- Slide -->
-<!-- TODO: i just wanted to pass the |count, but couldnt figure out how -->
 {{ partial:partials/slider :images="slider_images" }}
     {{slider_images}}
         {{partial:partials/slider-item}}
             {{image}}
                 {{partial:partials/hero}}
             {{/image}}
-            <div class="absolute flex flex-col h-full inset-0 justify-center pl-12 w-1/2">
-                <h2 class="text-xl font-bold">{{title}}</h2>
-                <h3 class="hidden md:block text-2xl text-shadow tracking-wider">{{details}}</h3>
+            <div class="absolute flex flex-col items-start h-full inset-0 justify-center pl-12 w-1/2">
+                <h2 class="uppercase tracking-widest text-beige">{{title}}</h2>
+                <h3 class="hidden sm:block text-2xl tracking-wider pt-2">{{details}}</h3>
+                <div class="hidden sm:block pt-8">
+                    {{if button_link}}
+                        {{ partial:partials/link :url="button_link" }}
+                            {{button_title}}
+                        {{/partial:partials/link}}
+                    {{/if}}
+                </div>
             </div>
         {{/partial:partials/slider-item}}
     {{/slider_images}}

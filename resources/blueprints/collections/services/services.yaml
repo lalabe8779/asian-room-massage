@@ -50,6 +50,7 @@ sections:
           type: bard
           icon: bard
           listable: hidden
+          container: assets
   sidebar:
     display: Sidebar
     fields:

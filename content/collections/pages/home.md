@@ -3,8 +3,8 @@ title: Home
 template: home
 blueprint: home
 author: 4247b919-b951-4164-bb1d-784684bd1808
-updated_by: 995e234d-6a50-4c6d-8caf-1e615c196b62
-updated_at: 1611858764
+updated_by: 4247b919-b951-4164-bb1d-784684bd1808
+updated_at: 1611953700
 about_us_subtitle: 'In room massage'
 about_us_title: 'Best mobile massage Las Vegas'
 about_us_content:
@@ -59,7 +59,7 @@ slider_images:
             type: text
             text: 'We provide the highest quality massage therapy with 24 hour on-demand service in Las Vegas.'
     button_title: 'Book an appointment'
-    button_link: null
+    button_link: /booking
     type: new_set
     enabled: true
   -
@@ -73,8 +73,8 @@ slider_images:
           -
             type: text
             text: 'We provide the highest quality of Swedish massage therapy with 24 hour on-demand massage in Las Vegs.'
-    button_title: null
-    button_link: null
+    button_title: 'View services'
+    button_link: /services
     type: new_set
     enabled: true
 mobile_massage_button_text: 'Book now!'

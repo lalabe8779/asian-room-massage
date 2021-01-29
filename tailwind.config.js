@@ -10,7 +10,8 @@ module.exports = {
   theme: {
         extend: {
             colors: {
-                black: '#1a1a1a'
+                black: '#1a1a1a',
+                beige: '#f7f4f0'
             }
         },
         fontFamily:{

@@ -60,6 +60,7 @@ sections:
           type: bard
           icon: bard
           listable: hidden
+          container: assets
       -
         handle: author
         field:

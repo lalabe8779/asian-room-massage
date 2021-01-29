@@ -1,17 +1,13 @@
-<div class="pb-8">
-    <div class="wave-section bg-beige h-64 overflow-y-hidden relative">
-        <h1
-            class="absolute inset-0 w-full h-full flex items-center justify-center text-3xl tracking-wide uppercase"
-        >
-            {{title}}
-        </h1>
-    </div>
+<div class="max-h-96 overflow-y-hidden relative">
+    {{image}} {{partial:partials/hero}} {{/image}}
 
-    <div
-        class="max-w-3xl my-6 prose prose-indigo prose-lg text-gray-500 mx-auto"
-    >
-        {{ description | classify }}
-    </div>
+    <h1 class="absolute inset-0 w-full h-full flex items-center justify-center text-3xl text-white tracking-wide uppercase">
+        {{title}}
+    </h1>
+</div>
+
+<div class="max-w-3xl my-6 prose prose-indigo prose-lg text-gray-500 mx-auto p-8">
+    {{ description | classify }}
 </div>
 
 <div class="dark-wave-section pt-12 flex items-center justify-center flex-col">

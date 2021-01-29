@@ -1,6 +1,6 @@
 <a
     href="{{ url }}"
-    class="{{if theme==='light' }} bg-beige text-black {{else}} text-white bg-black hover:bg-gray-800 active:bg-gray-800 {{/if}} focus:ring-indigo-200 uppercase text-xs font-bold tracking-widest flex justify-center px-4 py-2 border border-transparent leading-5 focus:outline-none focus:ring-2 focus:ring-offset-2 transition ease-in-out duration-150 disabled:opacity-75 disabled:cursor-not-allowed"
+    class="{{if theme==='light' }} bg-beige text-black {{else}} text-white bg-black border border-black hover:text-black active:text-black hover:bg-beige active:bg-beige {{/if}} focus:ring-indigo-200 uppercase text-xs font-bold tracking-widest flex justify-center px-4 py-2 border border-transparent leading-5 focus:outline-none focus:ring-2 focus:ring-offset-2 transition ease-in-out duration-150 disabled:opacity-75 disabled:cursor-not-allowed"
 >
     {{ slot }}
 </a>

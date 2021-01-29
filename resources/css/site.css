@@ -1,4 +1,9 @@
-/* your custom css */
+body {
+    color: #212529;
+}
+
+[x-cloak] { display: none; }
+
 .snap {
     -ms-scroll-snap-type: x mandatory;
     scroll-snap-type: x mandatory;
@@ -11,10 +16,6 @@
 
 .snap > div {
     scroll-snap-align: center;
-}
-
-body {
-    color: #212529;
 }
 
 .title-with-lines {
