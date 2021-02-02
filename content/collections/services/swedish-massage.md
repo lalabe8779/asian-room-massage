@@ -121,37 +121,8 @@ description:
               -
                 type: text
                 text: 'passive joint movement techniques '
-  -
-    type: heading
-    attrs:
-      level: 3
-    content:
-      -
-        type: text
-        text: Summaries
-  -
-    type: bullet_list
-    content:
-      -
-        type: list_item
-        content:
-          -
-            type: paragraph
-            content:
-              -
-                type: text
-                text: 'Choose a Swedish massage for relaxation or managing minor pain.'
-      -
-        type: list_item
-        content:
-          -
-            type: paragraph
-            content:
-              -
-                type: text
-                text: 'This type of massage is also good for people new to massage.'
 updated_by: 995e234d-6a50-4c6d-8caf-1e615c196b62
-updated_at: 1611861072
-image: massage-couples.jpg
+updated_at: 1612293402
+image: swedish-massage.png
 id: c831e37f-6399-4a90-ae82-a442fd921288
 ---

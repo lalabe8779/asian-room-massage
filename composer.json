@@ -12,8 +12,8 @@
         "laravel/framework": "^8.0",
         "laravel/tinker": "^2.0",
         "octoper/statamic-blade-components": "^0.0.1",
-        "spatie/statamic-responsive-images": "^1.8",
-        "statamic/cms": "3.0.*",
+        "spatie/statamic-responsive-images": "1.8.0",
+        "statamic/cms": "3.0.40",
         "visuellverstehen/statamic-classify": "^2.0"
     },
     "require-dev": {

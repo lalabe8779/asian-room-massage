@@ -24,7 +24,7 @@ description:
     content:
       -
         type: text
-        text: 'The four-hand massage consists of  twoIn Room Massage Las Vegas massage therapists performing a synchronized technical work simultaneously, on the right and left side. With double relaxation because it works on both sides of the brain.'
+        text: 'The four-hand massage consists of two In Room Massage Las Vegas massage therapists performing a synchronized technical work simultaneously, on the right and left side. With double relaxation because it works on both sides of the brain.'
   -
     type: paragraph
     content:
@@ -42,9 +42,9 @@ description:
     content:
       -
         type: text
-        text: 'The benefits are the same as massage with one person. The level of muscle relaxation increased because of the use 4 hand with more intense movements. Using the four-hand massage is having all benefits like “double” massage.'
+        text: 'The benefits are the same as a massage with one person. The level of muscle relaxation is increased because of the use 4 hand with more intense movements. '
 updated_by: 995e234d-6a50-4c6d-8caf-1e615c196b62
-updated_at: 1611861901
-image: 4-hands.jpg
+updated_at: 1612289577
+image: 4-handsaaa.png
 id: 89daaedd-72af-4612-b435-e8d1c8409302
 ---
