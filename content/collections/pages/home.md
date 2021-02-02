@@ -4,7 +4,7 @@ template: home
 blueprint: home
 author: 4247b919-b951-4164-bb1d-784684bd1808
 updated_by: 995e234d-6a50-4c6d-8caf-1e615c196b62
-updated_at: 1612294110
+updated_at: 1612294798
 about_us_subtitle: 'In room massage'
 about_us_title: 'Best mobile massage Las Vegas'
 about_us_content:
@@ -54,13 +54,14 @@ slider_images:
     button_link: /booking
     type: new_set
     enabled: true
+    title: 'In Room Massage Services'
     details:
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'In Room Massage Service'
+            text: 'We provide the highest quality massage service in the Las Vegas area!'
   -
     image:
       - banner-2.png
