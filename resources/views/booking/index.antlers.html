@@ -15,7 +15,7 @@
         {{ if !success }}
             <div class="text-center pb-16 space-y-6">
                 <h4 class="text-gray-700 uppercase">Welcome</h4>
-                <h1 class="text-3xl">Make your reservation now!</h1>
+                <h1 class="text-2xl">Fill out the form below or call {{ brand:phone_number }}</h1>
             </div>
             <div class="grid grid-cols-6 gap-6">
                 {{ fields }}
@@ -49,7 +49,7 @@
 
                 <div class="pt-4">
                     <p class="text-black">We will be in touch with you shortly.</p>
-                    <p class="text-black">If you need immediate assistance call us at 888-999-1234.</p>
+                    <p class="text-black">If you need immediate assistance call us at {{ brand:phone_number }}.</p>
                 </div>
             </div>
         {{/if}}
