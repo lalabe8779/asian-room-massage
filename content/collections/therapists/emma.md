@@ -11,10 +11,9 @@ servings:
   - hotel-in-room-message-services-in-las-vegas
   - mobile
   - out-call
-updated_by: 4247b919-b951-4164-bb1d-784684bd1808
-updated_at: 1610909027
+updated_by: 995e234d-6a50-4c6d-8caf-1e615c196b62
+updated_at: 1612364761
 images:
-  - therapist-5.jpg
-  - therapist-6.jpg
+  - emma.png
 id: 0a743c16-03ca-4ffc-9454-4c0bf5a8515d
 ---
