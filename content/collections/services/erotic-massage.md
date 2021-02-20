@@ -82,7 +82,9 @@ description:
         type: text
         text: 'Smell plays an important part in the enhancement of eroticism. Humans, like animals, are said to give off powerful sexual scents called pheromones from their sweat glands when they are in the mood for sexual activity. These odorous chemicals work subliminally and are believed to affect the behavior of others without their even being aware of them.'
 updated_by: 995e234d-6a50-4c6d-8caf-1e615c196b62
-updated_at: 1612290762
+updated_at: 1613821070
 image: erotic-massage.png
+seo:
+  description: 'Erotic Massage is another incredibly popular massage type where one of our stunning masseuses uses touch and teasing to heighten your sexual desires into a frenzy.'
 id: 93c0a893-0cf3-4cb1-be36-b1c564cc6158
 ---

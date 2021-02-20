@@ -1,0 +1,8 @@
+name: 'Ricardo Canastro'
+super: true
+id: 995e234d-6a50-4c6d-8caf-1e615c196b62
+password_hash: $2y$10$b9ouU5e61MjTobeaQo5suu7xsVgFJ29ZiJRfZzJ0ViUe7RJBrx72S
+preferences:
+  assets:
+    assets:
+      mode: table

@@ -18,8 +18,10 @@ servings:
   - mobile
   - out-call
 updated_by: 995e234d-6a50-4c6d-8caf-1e615c196b62
-updated_at: 1612366210
+updated_at: 1613821295
 images:
   - emma.png
+seo:
+  description: 'Emma, Chinese, 23.'
 id: 0a743c16-03ca-4ffc-9454-4c0bf5a8515d
 ---

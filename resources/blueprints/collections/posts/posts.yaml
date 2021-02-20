@@ -87,25 +87,12 @@ sections:
           required: true
           validate:
             - required
-  meta:
-    display: Meta
+  SEO:
+    display: SEO
     fields:
       -
-        handle: meta_title
+        handle: seo
         field:
-          input_type: text
-          character_limit: 60
-          antlers: false
-          display: 'Meta title'
-          type: text
-          icon: text
-          listable: hidden
-      -
-        handle: meta_description
-        field:
-          character_limit: '160'
-          antlers: false
-          display: 'Meta description'
-          type: textarea
-          icon: textarea
-          listable: hidden
+          type: seo_pro
+          listable: false
+          display: SEO

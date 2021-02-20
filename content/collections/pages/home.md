@@ -4,7 +4,7 @@ template: home
 blueprint: home
 author: 4247b919-b951-4164-bb1d-784684bd1808
 updated_by: 995e234d-6a50-4c6d-8caf-1e615c196b62
-updated_at: 1612294798
+updated_at: 1613820857
 about_us_subtitle: 'In room massage'
 about_us_title: 'Best mobile massage Las Vegas'
 about_us_content:
@@ -80,6 +80,8 @@ slider_images:
 mobile_massage_button_text: 'Book now!'
 mobile_massage_button_link: 'entry::77b5f69b-3fee-4d0e-adab-66e7cc5f8911'
 our_services_button_link: 'entry::d7ef2d9f-e7b0-4b87-8123-9178e0a99d2c'
+seo:
+  description: 'We offer mobile massage in Las Vegas, our massage therapists will travel yo tour location and provide a relaxing massage.'
 id: home
 content:
   -

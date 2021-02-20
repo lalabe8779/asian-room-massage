@@ -50,3 +50,12 @@ sections:
           max_items: 1
           listable: false
           localizable: true
+  SEO:
+    display: SEO
+    fields:
+      -
+        handle: seo
+        field:
+          type: seo_pro
+          listable: false
+          display: SEO

@@ -13,9 +13,11 @@ servings:
   - mobile
   - out-call
 updated_by: 995e234d-6a50-4c6d-8caf-1e615c196b62
-updated_at: 1612366172
+updated_at: 1613821320
 featured: true
 images:
   - alice.png
+seo:
+  description: 'Alice, Chinese, 24.'
 id: 10b518c0-05d8-4727-8b77-2f3100eeb186
 ---

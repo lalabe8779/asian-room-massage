@@ -50,7 +50,9 @@ description:
         type: text
         text: 'It offers sensual exploration to satisfy the body and mind. Whether you’re a man or woman, nuru massage is open to everyone. No matter what your sexual preferences are. Nuru massage allows you to relish in the sensual energy created during the activity. The strokes on the skin will allow you to engage in a safe and thrilling experience.'
 updated_by: 995e234d-6a50-4c6d-8caf-1e615c196b62
-updated_at: 1612291233
+updated_at: 1613821176
 image: nuru-massage.png
+seo:
+  description: 'Nuru massage, one of most popular massage originated from Japan. During the massage session, our masseuse will use warm massage oil and use her body to massage you with extreme physical contact creating intense sensations.'
 id: 1f70754a-c86b-4c19-945c-baaee7c156f4
 ---

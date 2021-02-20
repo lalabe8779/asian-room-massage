@@ -44,7 +44,9 @@ description:
         type: text
         text: 'The benefits are the same as a massage with one person. The level of muscle relaxation is increased because of the use 4 hand with more intense movements. '
 updated_by: 995e234d-6a50-4c6d-8caf-1e615c196b62
-updated_at: 1612289577
+updated_at: 1613821264
 image: 4-handsaaa.png
+seo:
+  description: 'Four hands massage is an Asian massage that involves 2 beautiful masseuses working in tandem to relieve your stress and find every sensitive spot that you have on your body.'
 id: 89daaedd-72af-4612-b435-e8d1c8409302
 ---

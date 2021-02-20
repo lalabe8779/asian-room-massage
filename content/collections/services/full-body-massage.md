@@ -20,7 +20,9 @@ description:
         type: text
         text: 'If there is a problem area that needs extra attention, such as a sore back or tight shoulders, request that the therapist spend more time focused on those trouble spots but the trade-off may be less time spent on other areas of the body. To ensure the full treatment of every body part, as well as a focus on specific issues, make an appointment for a longer session time.'
 updated_by: 995e234d-6a50-4c6d-8caf-1e615c196b62
-updated_at: 1612290849
+updated_at: 1613821058
 image: massage-full-body.jpg
+seo:
+  description: 'Your full body massage therapist will massage the entire body, including all the major areas like; the back, shoulders, legs, feet, arms, hands, and neck.'
 id: c25ed79e-4747-42dd-b508-4f10fc39e6ec
 ---
