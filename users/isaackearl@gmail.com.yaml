@@ -1,8 +1,4 @@
 name: 'Isaac Earl'
 super: true
-id: 995e234d-6a50-4c6d-8caf-1e615c196b62
-password_hash: $2y$10$3CSMDXasXDP5cS4rdzrk1e4uGpqpTWryAPBboJOI5r54AV1LPW5hW
-preferences:
-  assets:
-    assets:
-      mode: table
+id: a02bbb87-2d8d-4db4-8cac-5817714ca744
+password_hash: $2y$10$W7AAFqr3f/LlNBnzpypfbOGlWgvbPDS1CjWHSlH6GZ5lzgHiSSZoG
