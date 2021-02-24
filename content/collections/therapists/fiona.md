@@ -1,6 +1,6 @@
 ---
 title: Fiona
-nationality: Chinese
+nationality: Korean
 hourly_rate: 150
 age: 23
 massages:
@@ -14,7 +14,7 @@ servings:
   - mobile
   - out-call
 updated_by: a02bbb87-2d8d-4db4-8cac-5817714ca744
-updated_at: 1614147719
+updated_at: 1614149101
 featured: true
 images:
   - fiona.png
