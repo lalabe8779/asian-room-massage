@@ -19,8 +19,7 @@ servings:
   - out-call
 images:
   - kim1.png
-  - kim2.png
 updated_by: a02bbb87-2d8d-4db4-8cac-5817714ca744
-updated_at: 1614148460
+updated_at: 1614149304
 id: 839b69a0-f6c7-4a03-84f8-c9fafbfd716f
 ---
