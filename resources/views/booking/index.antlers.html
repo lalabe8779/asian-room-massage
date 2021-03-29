@@ -31,7 +31,6 @@
                             {{ elseif type === "time" }}
                                 {{ component:form.time id="{{handle}}" name="{{handle}}" value="{{ old ?? '' }}" }}
                             {{ /if}}
-
                             <p class="mt-2 text-sm text-red-600">{{ error }}</p>
                         {{ component:form.group }}
                     </div>
@@ -41,7 +40,6 @@
                 {{ component:button type="submit" }}Book{{/component:button}}
             </div>
         {{ /if }}
-
         {{ if success }}
             <div class="flex flex-col text-center items-center justify-center text-white">
                 <h2 class="text-xl text-black font-bold">Thank you for contacting us.</h2>
@@ -52,6 +50,11 @@
                 </div>
             </div>
         {{/if}}
+    {{ captcha }}
+
+    {{ if error:captcha }}
+    <p class="mt-2 text-sm text-red-600">{{ error:captcha }}</p>
+    {{ /if }}
     {{ /form:book_massage }}
 
 </div>
