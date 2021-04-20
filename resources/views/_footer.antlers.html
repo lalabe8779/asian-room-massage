@@ -1,4 +1,18 @@
-<footer class="bg-black w-full flex flex-col items-center justify-center py-6 text-white flex-shrink-0 px-8 text-center">
+<footer
+    class="bg-black w-full flex flex-col items-center justify-center py-6 text-white flex-shrink-0 px-8 text-center">
     <div>{{brand:copyright}}</div>
     <div>{{ captcha:disclaimer }}</div>
+    <a href="tel:{{brand:phone_number}}"
+       class="fixed bottom-8 rounded-md right-40 bg-yellow-500 hover:bg-yellow-600 focus:ring-black uppercase text-lg font-medium tracking-widest flex justify-center px-4 py-2 border border-transparent leading-5 focus:outline-none focus:ring-2 focus:ring-offset-2 text-white transition ease-in-out duration-150">
+        <div class="flex items-center space-x-2">
+            <div class="h-4 w-4">
+                <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path
+                        d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                </svg>
+            </div>
+            <span>Call Now</span>
+        </div>
+    </a>
+
 </footer>
